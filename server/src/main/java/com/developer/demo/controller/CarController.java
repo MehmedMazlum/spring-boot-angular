@@ -31,7 +31,7 @@ class CarController {
 
     @GetMapping("/cars/list")
     public Content getAllCars(@RequestParam(defaultValue = "0") int page) throws CarNotFoundException {
-        Page<Car> carPage = repository.findAll(new PageRequest(page, 4));
+        Page<Car> carPage = repository.findAll(new PageRequest(page, 40));
         Content content = new Content();
         content.setTotalPages(carPage.getTotalPages());
         content.setCars(carPage.get().collect(Collectors.toList()));
