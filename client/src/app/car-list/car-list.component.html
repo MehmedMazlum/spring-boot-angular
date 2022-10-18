@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="mat-card-title"> Cars </h4>
+      <table class="table table-stripped">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Photo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let car of cars">
+          <td>{{ car.id }}</td>
+          <td>{{ car.name }}</td>
+          <td>
+          <img src={{car.photo}}  width="200" height="100">
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <hr>
+      <ul class="nav nav-pills">
+        <li class="nav nav-item" *ngFor="let p of pages;let i =index">
+          <a class="nav-link active" href="" (click)="setPage(i,$event)"> {{i}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<mat-card>
+  <mat-card-title>Car List</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let car of cars">
+&lt;!&ndash;
+        <img mat-list-avatar src="{{car.photo}}" alt="{{car.name}}">
+&ndash;&gt;
+
+        <td>{{car.id}}</td><br>
+        <td>{{car.name}}</td><br>
+        <td>{{car.photo}}</td>
+
+
+&lt;!&ndash;        <h3 mat-line>
+          <a mat-button [routerLink]="['/car-edit', car.id]">{{car.name}}</a>
+        </h3>&ndash;&gt;
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+
+&lt;!&ndash;  <button mat-fab color="primary" [routerLink]="['/car-add']">Add</button>&ndash;&gt;
+</mat-card>
+-->

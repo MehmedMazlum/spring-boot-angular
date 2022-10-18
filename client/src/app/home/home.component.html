@@ -1,0 +1,58 @@
+<header>
+  <nav class ="navbar navbar-expand-md navbar-dark bg-dark">
+    <ul class="navbar-nav">
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/cars-list" class="nav-link">View Cars</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/cars-add" class="nav-link">Add New Car</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/cars-search" class="nav-link">Search Car</a></li>
+      <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/car-login" class="nav-link">Login</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/cars-logout" class="nav-link">LogOut</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container">
+
+  <div class="tablet-one-one"></div>
+  <div class="segment-one-one-three"></div>
+
+  <div class="tablet-one-two"></div>
+  <div class="segment-one-two-one"></div>
+  <div class="segment-one-two-two"></div>
+  <div class="segment-one-two-three"></div>
+  <div class="segment-one-two-four"></div>
+
+
+  <div class="tablet-one-three"></div>
+  <div class="segment-one-three-one"></div>
+
+
+  <div class="tablet-two-one"></div>
+  <div class="segment-two-one"></div>
+
+
+  <div class="tablet-two-two"></div>
+  <div class="segment-two-two-one"></div>
+  <div class="segment-two-two-three"></div>
+
+
+  <div class="tablet-two-three"></div>
+  <div class="segment-two-three-three"></div>
+
+
+  <div class="tablet-three-one"></div>
+  <div class="segment-three-one-three"></div>
+
+
+  <div class="tablet-three-two"></div>
+  <div class="segment-three-two-two"></div>
+
+
+  <div class="tablet-three-three"></div>
+  <div class="segment-three-three-one"></div>
+
+</div>
+</body>
+</html>

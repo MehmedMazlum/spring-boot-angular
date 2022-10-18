@@ -1,0 +1,86 @@
+<div class="card my-5">
+  <div class="card-body">
+    <form (ngSubmit)="saveCar()" #userForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" [(ngModel)]="car.name"
+               class="form-control"
+               id="name"
+               name="name"
+               placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="photo">Photo</label>
+        <input type="text" [(ngModel)]="car.photo"
+               class="form-control"
+               id="photo"
+               name="photo"
+               placeholder="Enter your photo">
+      </div>
+      <button type="submit" [disabled]="!userForm.form.valid"
+              class="btn btn-info">Save Car</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<mat-card>
+  <mat-card-title>Car List</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let car of cars">
+&lt;!&ndash;
+        <img mat-list-avatar src="{{car.photo}}" alt="{{car.name}}">
+&ndash;&gt;
+
+        <td>{{car.id}}</td><br>
+        <td>{{car.name}}</td><br>
+        <td>{{car.photo}}</td>
+
+
+&lt;!&ndash;        <h3 mat-line>
+          <a mat-button [routerLink]="['/car-edit', car.id]">{{car.name}}</a>
+        </h3>&ndash;&gt;
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+
+&lt;!&ndash;  <button mat-fab color="primary" [routerLink]="['/car-add']">Add</button>&ndash;&gt;
+</mat-card>
+-->
